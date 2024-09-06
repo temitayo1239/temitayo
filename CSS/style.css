@@ -1,0 +1,278 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+}
+/* .head:hover {
+    color: yellow;
+} */
+
+.header-one {
+    color: yellow;
+}
+.header-one:hover {
+    color: #000;
+}
+
+.header-two:hover {
+    color: yellow;
+    cursor: pointer;
+}
+.div{
+    display: flex;
+    justify-content: space-around;
+}
+.div2{
+    display: flex;
+    justify-content: space-around;
+}
+.space{
+    text-align: center;
+}
+.div3{
+    display: flex;
+    justify-content: space-between;
+}
+.rest:hover{
+    color: white;
+    cursor: pointer;
+}
+.rest{
+    background-color: aqua;
+}
+.boss:hover{
+    color:#fff;
+    cursor: pointer;
+}
+.boss{
+    background-color: aqua;
+}
+.btn {
+    font-size: large;
+    color: #fff;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px;
+    /* width: 100px;
+    height: 50px; */
+}
+.btn:hover{
+    background-color: blueviolet;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: job;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* @keyframes job {
+    0% {left:0px ; right: 0px}
+    25% {left:1000px ; right: 0px}
+    50% {left:1000px ; right: 1000px}
+    75% {left:0px ; right: 1000px}
+    100% {left:0px ; right: 0px} */
+.name{
+    text-align: center;
+    background-color: darkblue;
+}
+li {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+li:hover {
+    color: darkblue
+}
+/* .log{
+    display: flex;
+    justify-content: left;
+} */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.tabs{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    margin-top: 38px;
+    color: #fff;
+    justify-content: space-around;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container{
+    display: flex;
+    gap: 5px;
+}
+.btn-btn {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.text-primary {
+    color: purple
+}
+
+.text-secondary {
+    background-color: orange;
+    color: white
+}
+
+.yel{
+    background-color: yellow;
+    padding: .5em;
+    border-radius: 10px;
+    border: 5px;
+}
+.gre{
+    background-color: green;
+    padding: .5em;
+    border-radius: 10px;
+    border: 5px;
+    color: white;
+}
+.yel:hover{
+    color: wheat;
+}
+.gre:hover{
+    color: wheat;
+}
+
+.prices{
+    display: flex;
+}
+.discount{
+    font-size: 14px;
+    color: red;
+    margin: 0px;
+    font-style: italic;
+}
+.normal{
+    font-size: 30px;
+    color: green;
+    margin-bottom: 5px;
+}
+.all{
+    font-size: 30px;
+}
+.card{
+    background-color: rgb(75, 75, 229);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px;
+    height: 280px;
+}
+.div4{
+    display: flex;
+    justify-content: space-around;
+}
+img {
+    border-radius: 5px;
+}
+#pricing {
+    display: flex;
+}
+.cart {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    font-size: xx-large;
+}
+a{
+text-decoration: none;
+color:white
+}
+.image-hover{
+    height: 150px;
+    width: 250px;
+    background-image: url(/1.jpg);
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.image-hover:hover{
+    height: 150px;
+    width: 250px;
+    background-image: url(/2.jpg);
+    background-repeat: no-repeat;
+}
+#section-container{
+    margin-top: -1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        background-color: rgb(75, 75, 229);
+    }
+    .div{
+        display: grid;
+        gap: 80px;
+    }
+    .navbar {
+        display: grid;
+        justify-content: space-around;
+    }
+    .tabs{
+        display: flex;
+        gap: 30px;
+        font-size: 18px;
+        margin-top: 38px;
+        color:white !important;
+    }
+    section {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        animation-name: job;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes job {
+        0% {left:0px ; right: 0px}
+        25% {left:200px ; right: 0px}
+        50% {left:200px ; right: 200px}
+        75% {left:0px ; right: 200px}
+        100% {left:0px ; right: 0px}
+    }
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+}
