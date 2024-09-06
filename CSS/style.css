@@ -247,7 +247,7 @@ color:white
         justify-content: space-around;
     }
     .tabs{
-        display: flex;
+        display: none;
         gap: 30px;
         font-size: 18px;
         margin-top: 38px;
