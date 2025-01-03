@@ -234,7 +234,14 @@ color:white
     margin-top: -1rem;
 }
 
+.itms{
+    display: block !important;
+}
+
 @media only screen and (max-width: 600px) {
+    .itms{
+        display: none !important;
+    }
     .card {
         background-color: rgb(75, 75, 229);
     }
@@ -275,4 +282,7 @@ color:white
 #navbar{
     display: flex;
     justify-content: space-around;
+}
+.continue-btn {
+    color: #fff !important;
 }

@@ -1,0 +1,39 @@
+.form-width {
+    width: 480px !important;
+}
+.form-width2 {
+    display: flex ;
+    justify-content: center !important;
+    width: 960px !important;
+}
+.continue-btn {
+    color: #fff !important;
+}
+
+
+#registerForm {
+    margin-bottom: 20px;
+}
+
+.toast {
+    visibility: hidden; /* Hidden by default */
+    min-width: 250px; /* Set a minimum width */
+    margin-left: -125px; /* Center the toast */
+    background-color: #4CAF50; /* Green */
+    color: white; /* Text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded corners */
+    padding: 16px; /* Padding */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%; /* Center the toast */
+    top: 50px;
+    font-size: 17px; /* Font size */
+    transition: visibility 0s, opacity 0.5s linear; /* Fade in/out */
+    opacity: 0; /* Initial opacity */
+}
+
+.toast.show {
+    visibility: visible; /* Show the toast */
+    opacity: 1; /* Fade in the toast */
+}

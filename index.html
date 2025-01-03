@@ -1,398 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/image/IMG-20240829-WA0343-removebg-preview (1).png" />
   <title>SINCERE TV</title>
-  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<div class="text">
-    <div>
-      <div class="navbar">
-        <div class="logo">
-    <img src="../image/IMG-20240829-WA0343-removebg-preview (1).png" height="150"width="150"/>
-  </div>
-    <div id="navbar">
-        <ul class="tabs">
-          <li class="page1">HOME</li>
-          <li class="page2">ABOUT</li>
-          <li class="page3">SERVICE</li>
-          <li class="page4">PRODUCT</li>
-          <li class="page5">CONTACT</li>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-transparen d-flex justify-content-around">
+      <div>
+        <img src="/image/IMG-20240829-WA0343-removebg-preview (1).png" height="50" width="70" alt="">
+      </div>
+      <div class="d-none d-sm-block">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>&nbsp;Account
+              </a>
+              <ul class="dropdown-menu">
+                <div class="d-flex justify-content-around">
+                  <a class="btn btn-warning continue-btn" href="/formPage.html" role="button">SIGN IN</a>
+                </div>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                      <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>&nbsp;My Account</a></li>
+                <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
+                      <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982" />
+                      <path
+                        d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z" />
+                    </svg>&nbsp;Orders</a></li>
+                <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>&nbsp;Save Items</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-question-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path
+                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                </svg>&nbsp;Help
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Help center</a></li>
+                <li><a class="dropdown-item" href="#">Place an order</a></li>
+                <li><a class="dropdown-item" href="#">Payment option</a></li>
+                <li><a class="dropdown-item" href="#">Track an order</a></li>
+                <li><a class="dropdown-item" href="#">Cancel an order</a></li>
+                <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>&nbsp;Cart</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="d-md-flex justify-content-around " style="margin-top:5rem ;">
+      <div>
+        <ul class="list-group itms">
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-headphones" viewBox="0 0 16 16">
+              <path
+                d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+            </svg>&nbsp;
+            Headphones
+          </li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-phone" viewBox="0 0 16 16">
+              <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+            </svg>&nbsp;
+            Phones & Tablets
+          </li>
+          <li class="list-group-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z" />
+              <path
+                d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" />
+            </svg>&nbsp;Gaming
+          </li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-laptop" viewBox="0 0 16 16">
+              <path
+                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
+            </svg>&nbsp;
+            Computers
+          </li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-pc-display" viewBox="0 0 16 16">
+              <path
+                d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z" />
+            </svg>&nbsp;
+            Gaming PC</li>
+          <li class="list-group-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-nintendo-switch" viewBox="0 0 16 16">
+              <path
+                d="M9.34 8.005c0-4.38.01-7.972.023-7.982C9.373.01 10.036 0 10.831 0c1.153 0 1.51.01 1.743.05 1.73.298 3.045 1.6 3.373 3.326.046.242.053.809.053 4.61 0 4.06.005 4.537-.123 4.976-.022.076-.048.15-.08.242a4.14 4.14 0 0 1-3.426 2.767c-.317.033-2.889.046-2.978.013-.05-.02-.053-.752-.053-7.979m4.675.269a1.62 1.62 0 0 0-1.113-1.034 1.61 1.61 0 0 0-1.938 1.073 1.9 1.9 0 0 0-.014.935 1.63 1.63 0 0 0 1.952 1.107c.51-.136.908-.504 1.11-1.028.11-.285.113-.742.003-1.053M3.71 3.317c-.208.04-.526.199-.695.348-.348.301-.52.729-.494 1.232.013.262.03.332.136.544.155.321.39.556.712.715.222.11.278.123.567.133.261.01.354 0 .53-.06.719-.242 1.153-.94 1.03-1.656-.142-.852-.95-1.422-1.786-1.256" />
+              <path
+                d="M3.425.053a4.14 4.14 0 0 0-3.28 3.015C0 3.628-.01 3.956.005 8.3c.01 3.99.014 4.082.08 4.39.368 1.66 1.548 2.844 3.224 3.235.22.05.497.06 2.29.07 1.856.012 2.048.009 2.097-.04.05-.05.053-.69.053-7.94 0-5.374-.01-7.906-.033-7.952-.033-.06-.09-.063-2.03-.06-1.578.004-2.052.014-2.26.05Zm3 14.665-1.35-.016c-1.242-.013-1.375-.02-1.623-.083a2.81 2.81 0 0 1-2.08-2.167c-.074-.335-.074-8.579-.004-8.907a2.85 2.85 0 0 1 1.716-2.05c.438-.176.64-.196 2.058-.2l1.282-.003v13.426Z" />
+            </svg>&nbsp;
+            Nintendo Switch
+          </li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-playstation" viewBox="0 0 16 16">
+              <path
+                d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955 1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z" />
+            </svg>&nbsp;
+            Playstation</li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-xbox" viewBox="0 0 16 16">
+              <path
+                d="M7.202 15.967a8 8 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33m-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.4 8.4 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.5 9.5 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4 4 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.8 7.8 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12 12 0 0 1-.654-.319Z" />
+            </svg>&nbsp;
+            Xbox</li>
+          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-joystick" viewBox="0 0 16 16">
+              <path
+                d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2" />
+              <path
+                d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23" />
+            </svg>&nbsp;
+            Joystick</li>
         </ul>
       </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1">
+          </button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+          </button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+          </button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/image/d.jpg" height="355" width="600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Our services include:</h5>
+              <p>Selling Of free fire, call of duty account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In game top up and UID top up
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/image/e.jpg" height="355" width="600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Our services include:</h5>
+              <p>Selling Of free fire, call of duty account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In game top up and UID top up</p>>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/image/f.jpg" height="355" width="600" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Our services include:</h5>
+              <p>Selling Of free fire, call of duty account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In game top up and UID top up</p>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+      <div class="">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">
+              <b>YOU CAN CONTACT US</b>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary"> THE FOLLOWING BELLOW</h6>
+            <p class="card-text">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone" viewBox="0 0 16 16">
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+              </svg>&nbsp;
+              CALL: 07042786229</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>&nbsp;
+              WHATSAPP: 08092799625</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>&nbsp;
+              GMAIL: sinceretv1239@gmail.com</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="row row-cols-3 justify-content-around py-3">
+      <div class="card col" style="width: 22rem;">
+        <img src="./image/free fire 1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            Free fire account lvl 66
+          </h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all"><i class="bi bi-0-circle"></i>PRICE:</div>
+            <div class="normal">$500</div>
+            <div><s class="discount">$1000</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card col" style="width: 22rem;">
+        <img src="./image/free fire 2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 60</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$16</div>
+            <div><s class="discount">$75</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/images.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 59</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$23</div>
+            <div><s class="discount">$54</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
       </div>
     </div>
-  <div class="space">
-    <h2><b>Our services include:</b></h2>
-    <h3>Selling Of free fire, call of duty account</h3>
-    <h3>In game top up and UID top up</h3>
-    <hr />
+    <div class="row row-cols-3 justify-content-around py-3">
+      <div class="card" style="width: 22rem;">
+        <img src="./image/images (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 64 </h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$70</div>
+            <div><s class="discount">$90</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/images (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 71</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$300</div>
+            <div><s class="discount">$500</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/images (3).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 64</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$74</div>
+            <div><s class="discount">$100</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-3 justify-content-around py-3">
+      <div class="card" style="width: 22rem;">
+        <img src="./image/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 67</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$90</div>
+            <div><s class="discount">$150</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 68</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$1000</div>
+            <div><s class="discount">$1500</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 78</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$5</div>
+            <div><s class="discount">$10</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-3 justify-content-around py-3">
+      <div class="card" style="width: 22rem;">
+        <img src="./image/4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 64</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$867</div>
+            <div><s class="discount">$900</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 75</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$175</div>
+            <div><s class="discount">$350</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 80</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$599</div>
+            <div><s class="discount">$867</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-3 justify-content-around py-3">
+      <div class="card" style="width: 22rem;">
+        <img src="./image/7.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 64</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$1000</div>
+            <div><s class="discount">$2000</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 71</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$657</div>
+            <div><s class="discount">$987</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem;">
+        <img src="./image/9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Free fire account lvl 64</h5>
+          <p class="card-text">
+          <div class="price" id="pricing">
+            <div class="all">PRICE:</div>
+            <div class="normal">$564</div>
+            <div><s class="discount">$765</s></div>
+          </div>
+          </p>
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary">PLACE ORDER</a>
+            <a href="/HTML/successPage.html" class="btn btn-warning text-white">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      </script>
   </div>
-  <div class="div">
-    <div class="card">
-      <div class="img">
-        <!-- <div class="image-hover"></div> -->
-        <img src="../image/free fire 1.jpg" alt="free fire img" height="120" width="250" />
-      </div>
-      <div id="section-container">
-        <h4 id="title">
-          <b>Free fire account lvl 66 </b>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$500</div>
-          <div><s class="discount">$1000</s></div>
-        </div>
-
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/free fire 2.jpg" alt="free fire img" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 60 </b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$16</div>
-          <div><s class="discount">$75</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/images.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 59</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$23</div>
-          <div><s class="discount">$54</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="div 2">
-    <div>
-      <div class="card">
-        <img src="../image/images (1).jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 64 </b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$70</div>
-          <div><s class="discount">$90</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/images (2).jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 71</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$300</div>
-          <div><s class="discount">$500</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/images (3).jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title"></h4>
-        <p><b>Free fire account lvl 64</b></p>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$74</div>
-          <div><s class="discount">$100</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="div 2">
-    <div>
-      <div class="card">
-        <img src="../image/1.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 67</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$90</div>
-          <div><s class="discount">$150</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/2.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 68</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$1000</div>
-          <div><s class="discount">$1500</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/3.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 78</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$5</div>
-          <div><s class="discount">$10</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="div 2">
-    <div>
-      <div class="card">
-        <img src="../image/4.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 64</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$867</div>
-          <div><s class="discount">$900</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/5.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 75</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$175</div>
-          <div><s class="discount">$350</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/6.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 80</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$599</div>
-          <div><s class="discount">$867</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="div 2">
-    <div>
-      <div class="card">
-        <img src="../image/7.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 64</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$1000</div>
-          <div><s class="discount">$2000</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/8.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 71</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$657</div>
-          <div><s class="discount">$987</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card">
-        <img src="../image/9.jpg" alt="free fire" height="120" width="250" />
-        <h4 id="title">
-          <p><b>Free fire account lvl 64</b></p>
-        </h4>
-        <div class="price" id="pricing">
-          <div class="all">PRICE:</div>
-          <div class="normal">$564</div>
-          <div><s class="discount">$765</s></div>
-        </div>
-        <div class="button btn-container">
-          <p>
-            <b><button class="btn-btn text-primary">PLACE ORDER</button></b>
-          </p>
-          <p>
-            <b><button class="btn-btn text-secondary">
-                <a href="./successPage.html"> ADD TO CART</a>
-              </button></b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
 </body>
 
 </html>
